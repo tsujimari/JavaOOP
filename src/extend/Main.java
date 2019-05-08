@@ -3,14 +3,15 @@ package extend;
 public class Main {
 	public static void main(String[] args) {
 		Controller controller = new Controller("コントローラ");
-		Soft game_soft = new Soft("ゲームソフト");
-		Game game = new Game("PS4");
+		Soft adventure = new OkaAdventure("岡本の冒険", 4, "岡本");
+		Soft game_soft = new Soft("ゲームソフト", 2);
+		Game game = new OkaStation("岡ステーション", 1);
 
 		game.setController(controller);
-		game.setSoft(game_soft);
 		game.powerButton();
+		game.setSoft(adventure);
 		game.showStatus();
-		game.powerButton();
+		game.setSoft(game_soft);
 		game.showStatus();
 	}
 }

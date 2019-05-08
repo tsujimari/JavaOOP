@@ -1,10 +1,10 @@
 package classobject;
 
 public class Game {
-	private String name;
-	private Soft soft;
-	private Controller controller;
-	private boolean power;
+	protected String name;
+	protected Soft soft;
+	protected Controller controller;
+	protected boolean power;
 
 	public Game(String name) {
 		this.name = name;
@@ -23,6 +23,9 @@ public class Game {
 
 	public void setSoft(Soft soft) {
 		this.soft = soft;
+		if (power) {
+			this.soft.loadSoft();
+		}
 	}
 
 	public void setController(Controller controller) {
