@@ -1,4 +1,4 @@
-package extend;
+package implement;
 
 public class OkaStation extends Game {
 
@@ -16,6 +16,22 @@ public class OkaStation extends Game {
 					soft.name);
 		} else {
 			System.out.println("電源がついていません。");
+		}
+	}
+
+	@Override
+	public void gameStart() {
+		soft.gameStart();
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		while (true) {
+			System.out.print("> ");
+			String key = scanner.nextLine();
+			if (key.equals("q")) {
+				System.out.println("ゲームを終了します。");
+				scanner.close();
+				break;
+			}
+			soft.pushButton(key);
 		}
 	}
 

@@ -1,6 +1,6 @@
-package abstracts;
+package onverall;
 
-public class Game {
+public abstract class Game {
 	protected String name;
 	protected Soft soft;
 	protected boolean power;
@@ -24,16 +24,11 @@ public class Game {
 		this.soft = soft;
 		if (power) {
 			this.soft.loadSoft();
-			this.soft.gameStart();
 		}
 	}
 
-	public void showStatus() {
-		if (power) {
-			System.out.printf("*----ゲーム機情報----* \n ゲーム機名：%s \n ソフト名：%s  \n\n", name, soft.name);
-		} else {
-			System.out.println("電源がついていません。");
-		}
-	}
+	public abstract void showStatus();
+
+	public abstract void gameStart();
 
 }
