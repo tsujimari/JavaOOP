@@ -139,3 +139,28 @@
   プレイヤー人数：3人
   でゲームを始めます。
   ```
+
+## 補足
+
+コンソール画面からの入力(標準入力)を取得するには、`java.util`パッケージの`Scanner`クラスを使用する。
+以下にサンプルコードを記載する。
+
+```java
+public class ScannerSample {
+	public static void main(String[] args) {
+		// 標準入力を受け取る
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		System.out.print("文字を入力してください。 > ");
+		String input = scanner.nextLine();
+		System.out.printf("入力した文字は%sです。", input);
+		scanner.close();
+	}
+}
+```
+
+実行結果
+
+```bash
+文字を入力してください。 > Hello World    ⬅️入力
+入力した文字はHello Worldです。
+```
