@@ -1,4 +1,4 @@
-package onverall;
+package overall;
 
 public abstract class Game {
 	protected String name;

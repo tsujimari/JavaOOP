@@ -8,5 +8,7 @@ public class Main {
 		Soft boardgame = new OkaBoardGame();
 		game.setSoft(boardgame);
 		game.gameStart();
+
+		game.powerButton();
 	}
 }

@@ -20,7 +20,6 @@ public class OkaBoardGame extends Soft {
 
 		System.out.printf("ステージ名：%s\nプレイヤー人数：%d人\nでゲームを始めます。", this.stage, this.playNumber);
 
-		scanner.close();
 	}
 
 }

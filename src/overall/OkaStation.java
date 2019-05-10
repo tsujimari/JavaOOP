@@ -1,4 +1,4 @@
-package onverall;
+package overall;
 
 public class OkaStation extends Game {
 

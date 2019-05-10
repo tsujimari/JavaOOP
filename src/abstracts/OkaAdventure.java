@@ -22,7 +22,6 @@ public class OkaAdventure extends Soft {
 		System.out.print("冒険者の名前 > ");
 		this.characterName = scanner.nextLine();
 		System.out.printf("冒険者*%s*で冒険を始めます。\n\n", this.characterName);
-		scanner.close();
 	}
 
 }
