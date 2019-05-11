@@ -28,7 +28,6 @@ public class OkaStation extends Game {
 			String key = scanner.nextLine();
 			if (key.equals("q")) {
 				System.out.println("ゲームを終了します。");
-				scanner.close();
 				break;
 			}
 			soft.pushButton(key);

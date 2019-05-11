@@ -10,8 +10,8 @@ public class OkaAdventure extends Soft {
 
 	@Override
 	void loadSoft() {
-		System.out.printf("*----ゲームソフトを読み込みました。----* \n ゲームソフト名：%s \n ソフト容量：%s GB \n キャラクター名： %s \n\n", this.name,
-				this.size, this.characterName);
+		System.out.printf("*----ゲームソフトを読み込みました。----* \n ゲームソフト名：%s \n ソフト容量：%s GB \n キャラクター名： %s \n\n", name, size,
+				characterName);
 	}
 
 	@Override
