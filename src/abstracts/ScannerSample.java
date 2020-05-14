@@ -7,6 +7,5 @@ public class ScannerSample {
 		System.out.print("文字を入力してください。 > ");
 		String input = scanner.nextLine();
 		System.out.printf("入力した文字は%sです。", input);
-		scanner.close();
 	}
 }
