@@ -6,6 +6,12 @@ package overall;
 public interface GameSoft {
 
 	/**
+	 * ゲームソフトの名前を取得する
+	 * @return String
+	 */
+	public String getGameName() ;
+
+	/**
 	 * ゲームソフトの情報を表示する
 	 */
 	public void loadSoft();

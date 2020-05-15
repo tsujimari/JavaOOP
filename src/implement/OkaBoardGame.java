@@ -16,6 +16,15 @@ public class OkaBoardGame extends Soft implements CharacterKeyEnable {
 	int playNumber;
 
 	/**
+	 * ゲームソフトの名前を取得する
+	 * @return String
+	 */
+	@Override
+	public String getGameName() {
+		return this.name;
+	}
+
+	/**
 	 * ゲームソフトを読み込む
 	 */
 	@Override

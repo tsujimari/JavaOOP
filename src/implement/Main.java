@@ -7,7 +7,7 @@ public class Main {
 		game.powerButton();
 
 		// 岡本の人生ソフトを作成し、ゲーム機に設定する
-		Soft boardgame = new OkaBoardGame();
+		GameSoft boardgame = new OkaBoardGame();
 		game.setSoft(boardgame);
 		// ゲームを開始する
 		game.gameStart();

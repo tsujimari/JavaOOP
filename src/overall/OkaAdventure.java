@@ -14,6 +14,11 @@ public class OkaAdventure extends Soft implements CrossKeyEnable, CharacterKeyEn
 	// キャラクター名
 	String characterName;
 
+	@Override
+	public String getGameName() {
+		return this.name;
+	}
+
 	/**
 	 * ゲームソフトを読み込む
 	 */

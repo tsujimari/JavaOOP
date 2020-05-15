@@ -25,7 +25,7 @@ public class OkaStation extends Game {
 	public void showStatus() {
 		if (power) {
 			System.out.printf("*----ゲーム機情報----* \n ゲーム機名：%s%s \n バージョン： %d \n ソフト名：%s \n\n", name, version, version,
-					soft.name);
+					soft.getGameName());
 		} else {
 			System.out.println("電源がついていません。");
 		}

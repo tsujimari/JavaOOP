@@ -7,7 +7,7 @@ public abstract class Game {
 	// ゲーム機名
 	protected String name;
 	// 接続ゲームソフト
-	protected Soft soft;
+	protected GameSoft soft;
 	// 電源(`True`：電源入,`False`：電源切)
 	protected boolean power;
 
@@ -37,7 +37,7 @@ public abstract class Game {
 	 * ・ゲームソフトをセットする。フィールドの soft に、引数の値を設定する。
 	 * @param soft 接続ゲームソフト
 	 */
-	public void setSoft(Soft soft) {
+	public void setSoft(GameSoft soft) {
 		this.soft = soft;
 		if (power) {
 			this.soft.loadSoft();
