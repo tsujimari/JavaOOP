@@ -10,7 +10,7 @@
 
 A ボタンと B ボタンを押した際の機能を定義した`文字ボタンインターフェース(CharacterKeyEnable.java)`を作成します。
 
-十字キーを押した際の機能を定義した`十字キーインターフェース(CharacterKeyEnable.java)`を作成します。 今回キーボードの十字キーを使用するのではなく、`k キー`を`↑ キー`に、`j キー`を`↓ キー`に、`l キー`を`→ キー`に、`h キー`を`← キー`として使用します。
+十字キーを押した際の機能を定義した`十字キーインターフェース(CrossKeyEnable.java)`を作成します。 今回キーボードの十字キーを使用するのではなく、`k キー`を`↑ キー`に、`j キー`を`↓ キー`に、`l キー`を`→ キー`に、`h キー`を`← キー`として使用します。
 
 #### ゲームソフトインターフェース(GameSoft.java)
 
@@ -32,7 +32,7 @@ A ボタンと B ボタンを押した際の機能を定義した`文字ボタ�
   | pushA      | なし | 整数   | A ボタンが押された時の処理を実装する。 |
   | pushB      | なし | 整数   | B ボタンが押された時の処理を実装する。 |
 
-#### 十字キーインターフェース(CharacterKeyEnable.java)
+#### 十字キーインターフェース(CrossKeyEnable.java)
 
 - メソッド
 
@@ -142,7 +142,7 @@ A ボタンと B ボタンを押した際の機能を定義した`文字ボタ�
 
 ### 問題４
 
-ゲームソフトの実体である`岡本の冒険(OkaAdventure.java)`を作成します。`岡本の冒険(OkaAdventure.java)`は`ゲームソフトクラス(Soft.java)`を継承し、`文字ボタンインターフェース(CharacterKeyEnable.java)`と``十字キーインターフェース(CharacterKeyEnable.java)`を実装します。
+ゲームソフトの実体である`岡本の冒険(OkaAdventure.java)`を作成します。`岡本の冒険(OkaAdventure.java)`は`ゲームソフトクラス(Soft.java)`を継承し、`文字ボタンインターフェース(CharacterKeyEnable.java)`と`十字キーインターフェース(CrossKeyEnable.java)`を実装します。
 
 
 #### 岡本の冒険(OkaAdventure.java)
