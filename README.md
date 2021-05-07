@@ -37,9 +37,9 @@
 
 1 [クラスとオブジェクト](./src/classobject)
 
-2 [継承](./src/extends)
+2 [継承](./src/extend)
 
-3 [抽象クラス](./src/abstract)
+3 [抽象クラス](./src/abstracts)
 
 4 [インターフェース](./src/implement)
 
