@@ -3,7 +3,7 @@ package classobject;
 public class Main {
 	public static void main(String[] args) {
 		Soft gameSoft = new Soft("ゲームソフト", 2);
-		Game game = new Game("PS4");
+		Game game = new Game("岡ステーション");
 
 		// ゲームソフトをゲーム機にセットする
 		game.setSoft(gameSoft);
